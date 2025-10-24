@@ -17,6 +17,14 @@ body {
     width: 85%;
     height: 25%;
 }
+#greeting {
+    color: #285943;
+    text-align: center;
+    position: relative;
+    font-style: oblique;
+    object-fit: fill;
+    width: 100%;
+}
 #isd {
     text-align: center;
     text-decoration: none;
@@ -34,12 +42,17 @@ a {
     background-image: url('zaobanai.webp');
     margin: 0px;
 }
+.container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 #box {
-    width: 325px;
+    width: 320px;
     height: 200px;
     margin: 20px;
-    position:relative;
-    display: inline-block;
+    position:relative; 
+    display:inline-table;
     box-shadow: 5px 5px 10px 0px lightgray;
     background-color: white;
     color: #77AF9C;
