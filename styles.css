@@ -3,18 +3,19 @@ body {
     padding-right: 0px;
 }
 nav {
-    padding: 1rem 5%;
+    width: inherit;
+    padding: 1rem 2%;
     background: rgba(255, 255, 255, 0.70);
     border-bottom: 2px solid rgba(255, 255, 255, 0.80);
     backdrop-filter: blur(15px);
-    margin-bottom: 2px;
+    margin-bottom: 0px;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .logo {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     font-weight: 900;
     color: #12df82;
     letter-spacing: 1px;
@@ -88,6 +89,7 @@ a {
 }
 .container {
     width:100%;
+    min-width: 390px;
     height: 100%;
     display:flex;
     flex-wrap: wrap;
@@ -101,15 +103,19 @@ a {
     object-fit: cover;
 }
 #box {
-    width: 320px;
-    height: 200px;
+    width: 280px;
+    height: 175px;
     margin: 20px;
     position:relative; 
     display:inline-table;
     box-shadow: 5px 5px 10px 0px grey;
-    background-color: white;
-    color: #77AF9C;
+    background-color: rgba(255, 255, 255, 0.45);
+    color: #2f9b77;
     border-radius: 15px;
+    border-color: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    backdrop-filter: blur(10px);
     padding: 10px;
     transition-duration: 0.2s;
 }
