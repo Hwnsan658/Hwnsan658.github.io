@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     padding-right: 0px;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 nav {
     width: inherit;
@@ -20,17 +21,20 @@ nav {
     color: #12df82;
     letter-spacing: 1px;
     user-select: none;
+    margin-bottom: 10px;
 }
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
+    margin-right: 9px;
 }
 .nav-links li a {
     position: relative;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     font-weight: 500;
-    color: #8cd790;
+    color: #ffffff;
+    text-shadow: 0px 3px 6px #12df82;
 }
 .nav-links li a:hover {
     color: #1fd62896;
