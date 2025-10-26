@@ -39,11 +39,13 @@
                 <li><a href="article.html">博客</a></li>
                 <li><a href="tools.html">推荐</a></li>
             </ul>
-            <div class="btns">
-                <button class="btn"><a href="https://qm.qq.com/q/Jl8MFdhOQW">Talking</a></button>
-            </div>
+                <div class="btns">
+                    <button class="btn">
+                       <a href="https://qm.qq.com/q/Jl8MFdhOQW">Talking</a>
+                    </button>
+                </div>
         </nav>
-
+        
             <div
              id="title">
             <h1>欢迎来到华的个人站点!</h1>
@@ -51,10 +53,10 @@
             <div id="greeting"></div>
             <script>
             let time = new Date().getHours();
-            if (time<12) {
-                var greeting = '上午好！欢迎访问工具箱';
+            if (time>4 && time<12) {
+                var greeting = '早上好！欢迎访问工具箱';
             }
-            else if (time<18) {
+            else if (time>=12 && time<18) {
                 var greeting = '下午好！欢迎访问工具箱';
             }
             else {

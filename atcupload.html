@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
-        <title>工具箱-推荐</title>
+        <title>biaoti</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="Favicon.ico" type="image/x-icon">
         <script type="text/javascript">
         // 定义图片路径数组
         var bodyBgs = [
@@ -18,12 +19,12 @@
         var randomBgIndex = Math.floor(Math.random() * bodyBgs.length);
         // 设置背景样式
         document.write (
-            '<style>body { background: url(' + bodyBgs[randomBgIndex] + ') no-repeat center center; background-size: cover; background-attachment: fixed;}</style>'
+            '<style>body { background: url(' + bodyBgs[randomBgIndex] + ') no-repeat center center; background-size: cover; }</style>'
         );
         </script>
     </head>
     <body>
-        <div>
+        <div class="container">
             <nav>
             <div class="logo">
                RC
@@ -34,10 +35,17 @@
                 <li><a href="article.html">博客</a></li>
                 <li><a href="tools.html">推荐</a></li>
             </ul>
-            <div class="btns">
-                <button class="btn"><a href="https://qm.qq.com/q/Jl8MFdhOQW">Talking</a></button>
-            </div>
+                <div class="btns">
+                    <button class="btn">
+                       <a href="https://qm.qq.com/q/Jl8MFdhOQW">Talking</a>
+                    </button>
+                </div>
         </nav>
+
+        <div class="eventbox">
+            <h1>&nbsp;&nbsp;无法上传！</h1>
+            <p>&nbsp;上传接口正在施工中，本站暂不支持上传文章，敬请见谅。</p>
+        </div>
         </div>
     </body>
 </html>
