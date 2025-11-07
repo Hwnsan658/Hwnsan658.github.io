@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <title>博客-通过前端技术与py的联动制作和实现NV游戏的全平台兼容和发行</title>
+        <link rel="stylesheet" href="/stylelist/styles.css">
+        <link rel="icon" href="Favicon.ico" type="image/x-icon">
+        <script type="text/javascript">
+        // 定义图片路径数组
+        var bodyBgs = [
+           "/image/01.webp",
+           "/image/02.webp",
+           "/image/03.jpg",
+           "/image/04.webp",
+           "/image/05.webp",
+        ];
+        // 生成随机索引
+        var randomBgIndex = Math.floor(Math.random() * bodyBgs.length);
+        // 设置背景样式
+        document.write (
+            '<style>body { background: url(' + bodyBgs[randomBgIndex] + ') no-repeat center center; background-size: cover; }</style>'
+        );
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+            <div class="logo">
+               RC
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="webs.html">网站</a></li>
+                <li><a href="article.html">博客</a></li>
+                <li><a href="tools.html">推荐</a></li>
+            </ul>
+                <div class="btns">
+                    <button class="btn">
+                       <a href="https://qm.qq.com/q/Jl8MFdhOQW">Talking</a>
+                    </button>
+                </div>
+            </nav>
+            <div class="atccontent">
+                <h1>
+                    通过前端技术与py的联动制作和实现NV游戏的全平台兼容和发行
+                </h1>
+                <p id="writer">
+                    25.11.07.17.48.by周华
+                </p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;唉想半天不知道怎么写。
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;总结一下，设想以html+css来处理图形化的难题，以js和py作为实现复杂交互的技术。
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;当下的难题在于css真是太尼玛难用了，又臭又长还会出现一些不知道能不能称得上bug的莫名其妙的bug。
+                    切图可能只要10分钟，画cg也只要20分钟，给css修bug能花1个小时。
+                    所以目前除了设想的方案，也在利用pygame重构游戏框架。
+                    虽然也有困难，但总比css让人自废双眼要好。
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;在游戏开发后期，我会考虑将游戏框架打包做成一个通用nv游戏开发工具。
+                    在目前阶段的展望，我会让这个工具的使用门槛降到地心的水准，也就是人人均能零成本零基础精通，
+                    还要支持Android，win，mac，iOS，Linux四个平台（鸿蒙没人提就算了），等到工具真正完工并发布的那天，
+                    我会把它开源在我的GitHub仓库里，在内网平台，可以在我的个人主页找到网盘链接，如果以后搭新站了，就扔在新的工具箱里，
+                    总之就是完全免费人人有份，所有人利用我的工具发布游戏时都可以擦去我的开发痕迹，以自己名义去发布。
+                    就是这样，写累了。
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;这个页面的背景图片显示模式有问题，下面有空白，记得修一下，唉。
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
