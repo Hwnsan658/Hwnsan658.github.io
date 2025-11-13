@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <title>博客-通过前端技术与py的联动制作和实现NV游戏的全平台兼容和发行</title>
+        <link rel="stylesheet" href="/stylelist/styles.css">
+        <link rel="icon" href="/Favicon.ico" type="image/x-icon">
+        <script type="text/javascript">
+        // 定义图片路径数组
+        var bodyBgs = [
+           "/image/01.webp",
+           "/image/02.webp",
+           "/image/03.jpg",
+           "/image/04.webp",
+           "/image/05.webp",
+           "/image/06.jpg",
+           "/image/07.jpg",
+           "/image/08.jpg",
+           "/image/09.jpg",
+           "/image/10.jpg",
+        ];
+        // 生成随机索引
+        var randomBgIndex = Math.floor(Math.random() * bodyBgs.length);
+        // 设置背景样式
+        document.write (
+            '<style>body { background: url(' + bodyBgs[randomBgIndex] + ') no-repeat center center; background-size: cover; }</style>'
+        );
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+            <div class="logo">
+               RC
+            </div>
+            <ul class="nav-links">
+                <li><a href="/index.html">首页</a></li>
+                <li><a href="/webs.html">网站</a></li>
+                <li><a href="/article.html">博客</a></li>
+                <li><a href="/tools.html">推荐</a></li>
+            </ul>
+                <div class="btns">
+                    <button class="btn">
+                       <a href="https://qm.qq.com/q/Jl8MFdhOQW">Talking</a>
+                    </button>
+                </div>
+            </nav>
+            <div class="atccontent">
+                <h1>
+                    python笔记01
+                </h1>
+                <p id="writer">
+                    25.11.13.14.18.手动发布 by周华
+                </p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;python常用的值大类包括num、str、list、tuple（元组）、set（集合）、dictionary。
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;其中num和str尤为常用。num又包括整数（init）、浮点数（float）、复数（complex）、布尔（bool）。
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·整数即字面意义上的整数；
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·浮点数就是带有小数点.的数，具体有什么含义我忘了，等我复习一点再回来写；
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·复数如4+3j，以‘j’结尾表示复数，具体应用没学，学完再回来完善；
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·布尔是特殊的num值，通常用于判断语句，只有1、0两个值（True、False）。
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;至于str，即字符串，可以用来打印各种文本信息。list和之后的等等都还没学，吃透了再回来写。
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;在python中常用的语句语法有很多，学起来比较杂乱，所以我个人容易遗忘的东西我会丢在这里：
+                    <br>
+                    &nbsp;&nbsp;计算符号>>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;基础运算符>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·加&nbsp;&nbsp;&nbsp;&nbsp;+
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·减&nbsp;&nbsp;&nbsp;&nbsp;-
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·乘&nbsp;&nbsp;&nbsp;&nbsp;*
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·除&nbsp;&nbsp;&nbsp;&nbsp;/
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·取整除&nbsp;&nbsp;&nbsp;&nbsp;//
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·取余&nbsp;&nbsp;&nbsp;&nbsp;%
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·指数&nbsp;&nbsp;&nbsp;&nbsp;**
+                    <br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;赋值运算符>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·赋值&nbsp;&nbsp;&nbsp;&nbsp;=
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·加&nbsp;&nbsp;&nbsp;&nbsp;+=
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·减&nbsp;&nbsp;&nbsp;&nbsp;-=
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·乘&nbsp;&nbsp;&nbsp;&nbsp;*=
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·除&nbsp;&nbsp;&nbsp;&nbsp;/=
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·取整除&nbsp;&nbsp;&nbsp;&nbsp;//=
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·取余&nbsp;&nbsp;&nbsp;&nbsp;%=
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·指数&nbsp;&nbsp;&nbsp;&nbsp;**=
+                    <br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;写累了，等有机会再继续写。
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp; 
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
