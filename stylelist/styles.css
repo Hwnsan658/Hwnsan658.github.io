@@ -327,11 +327,10 @@ scroll-container::-webkit-scrollbar {
     box-shadow: 3px 3px 6px 0px rgba(170, 170, 170, 0.7);
     width: 80%;
     height: 25rem auto;
-    max-height: 100vh;
+    max-height: 100%;
     padding-top: 50px;
     margin: 60px auto 30px auto;
-    margin-bottom: 100px;
-    padding-bottom: 70px;
+    margin-bottom: 70px;
     border-color: #ebfff8;
     border-style: solid;
     border-width: 1.5px;
