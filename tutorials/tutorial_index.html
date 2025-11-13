@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <title>工具箱-教程</title>
+        <link rel="stylesheet" href="/stylelist/styles.css">
+        <script type="text/javascript">
+        // 定义图片路径数组
+        var bodyBgs = [
+           "/image/01.webp",
+           "/image/02.webp",
+           "/image/03.jpg",
+           "/image/04.webp",
+           "/image/05.webp",
+           "/image/06.jpg",
+           "/image/07.jpg",
+           "/image/08.jpg",
+           "/image/09.jpg",
+           "/image/10.jpg",
+        ];
+        // 生成随机索引
+        var randomBgIndex = Math.floor(Math.random(1,5) * bodyBgs.length);
+        // 设置背景样式
+        document.write (
+            '<style>body { background: url(' + bodyBgs[randomBgIndex] + ') no-repeat center center; background-size: cover; background-attachment: fixed;}</style>'
+        );
+
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+            <div class="logo">
+               RC
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="webs.html">网站</a></li>
+                <li><a href="article.html">博客</a></li>
+                <li><a href="tools.html">推荐</a></li>
+            </ul>
+            <div class="btns">
+                <button class="btn">
+                    <a href="https://qm.qq.com/q/Jl8MFdhOQW">Talking</a>
+                </button>
+            </div>
+            </nav>
+            <div class="atccontainer">
+            
+            <script>
+                 document.getElementsByClassName("atclink").style.display = "none";// 隐藏
+                 document.getElementsByClassName("linkloaded").style.display = "inline-table";// 显示
+                 document.getElementById("atcbox").style.display = "none"; // 隐藏
+                 document.getElementById("atcboxloaded").style.display = "inline-table"; // 显示
+            </script>
+
+            <a href="tutorial_files/tutorial01.html" class="linkloaded">
+                <div id="ttrboxloaded"> 
+                    <h3>教程区测试</h3>
+                    <p>25.11.13.23.12.手动发布 by周华</p>
+                </div>
+            </a>
+            <a href="" class="atclink">
+                <div id="ttrbox">   
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </a>
+            </div>
+        </div>
+    </body>
+</html>
