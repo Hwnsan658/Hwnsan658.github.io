@@ -6,6 +6,30 @@ body {
     background-attachment: fixed;
 }
 
+@font-face {
+    font-family: "Blackfonts";
+    src: url(/fonts/QynFlavorAltGB-Bold.ttf) format("truetype"),
+}
+
+@font-face {
+    font-family: "blacklight";
+    src: url(/fonts/QynFlavorAltGB-Light.ttf) format("truetype");
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "blackheavy";
+    src: url(/fonts/QynFlavorAltGB-Heavy.ttf) format("truetype");
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: "Songfonts";
+    src: url("/fonts/CorpSrcWinSong-slim.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 nav {
     width: 100%;
     padding: 1rem 2%;
@@ -141,6 +165,19 @@ a {
 }
 #box h3 {
     color: #285943;
+}
+#box h4 {
+    color: #39795cc5;
+    text-align: center;
+    font-size: medium;
+    font-weight: 700;
+}
+#italic_text {
+    color: #50b889a8;
+    font-style: italic;
+    text-align: center;
+    font-size: medium;
+    font-weight: 500;
 }
 #box:hover {
     scale: 1.04;
@@ -286,9 +323,11 @@ scroll-container::-webkit-scrollbar {
     text-align: center;
     box-shadow: 3px 3px 6px 0px rgba(170, 170, 170, 0.7);
     width: 80%;
-    height: 25rem;
+    height: 25rem auto;
+    max-height: 100vh;
     padding-top: 50px;
     margin: 60px auto 30px auto;
+    margin-bottom: 100px;
     border-color: #ebfff8;
     border-style: solid;
     border-width: 1.5px;
@@ -342,9 +381,20 @@ scroll-container::-webkit-scrollbar {
     position: fixed;
     left: 1.2rem;
 }
-#webbox {
+
+.webboxs a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 165px;
+    height: 107px;
+}
+
+#webboxloaded {
     width: 135px;
+    max-width: 149px auto;
     height: 55px;
+    max-height: 91px;
     margin: 8px;
     position:relative; 
     display:inline-table;
@@ -358,20 +408,30 @@ scroll-container::-webkit-scrollbar {
     backdrop-filter: blur(10px);
     padding: 6px;
     transition-duration: 0.2s;
+    
 }
-#webbox h3 {
+#webboxloaded h3 {
     color: #285943;
     margin-bottom: 0px;
     margin-top: 5px;
     margin-left: 2px;
 }
-#webbox p {
+#webboxloaded p {
     margin-top: 5px;
+    width: 135px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-#webbox:hover {
+#webboxloaded:hover {
     scale: 1.04;
     box-shadow: rgba(170, 170, 170, 0.7) 3px 3px 6px 0px;
 }
+/*网站页面未上传盒子*/
+#webbox {
+    display: none;
+}
+
 .webboxs {
     margin-top: 5rem;
     user-select: none;
@@ -380,3 +440,4 @@ scroll-container::-webkit-scrollbar {
     flex-wrap: wrap;
     justify-content: center;
 }
+
