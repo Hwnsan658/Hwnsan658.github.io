@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <title>博客-python笔记01</title>
+        <link rel="stylesheet" href="/stylelist/styles.css">
+        <link rel="icon" href="/Favicon.ico" type="image/x-icon">
+        <script type="text/javascript">
+        // 定义图片路径数组
+        var bodyBgs = [
+           "/image/01.webp",
+           "/image/02.webp",
+           "/image/03.jpg",
+           "/image/04.webp",
+           "/image/05.webp",
+           "/image/06.jpg",
+           "/image/07.jpg",
+           "/image/08.jpg",
+           "/image/09.jpg",
+           "/image/10.jpg",
+        ];
+        // 生成随机索引
+        var randomBgIndex = Math.floor(Math.random() * bodyBgs.length);
+        // 设置背景样式
+        document.write (
+            '<style>body { background: url(' + bodyBgs[randomBgIndex] + ') no-repeat center center; background-size: cover; }</style>'
+        );
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+            <div class="logo">
+               RC
+            </div>
+            <ul class="nav-links">
+                <li><a href="/index.html">首页</a></li>
+                <li><a href="/webs.html">网站</a></li>
+                <li><a href="/article.html">博客</a></li>
+                <li><a href="/tools.html">推荐</a></li>
+            </ul>
+                <div class="btns">
+                    <button class="btn">
+                       <a href="https://qm.qq.com/q/Jl8MFdhOQW">Talking</a>
+                    </button>
+                </div>
+            </nav>
+            <div class="atccontent">
+                <h1>
+                    python笔记02
+                </h1>
+                <p id="writer">
+                    25.11.14.15.03手动发布 by周华
+                </p>
+                <p>
+                    &nbsp;&nbsp;<b>数据类型转换>>></b>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·整数&nbsp;&nbsp;&nbsp;&nbsp;变量名&nbsp;=&nbsp;int(值)
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·浮点数&nbsp;&nbsp;&nbsp;&nbsp;变量名&nbsp;=&nbsp;float(值)
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·字符串&nbsp;&nbsp;&nbsp;&nbsp;变量名&nbsp;=&nbsp;str(值)
+                    <br>
+                    <br>
+                    <br>
+                    &nbsp;&nbsp;<b>字符串的格式化>>></b>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;<b>占位符>></b>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·字符串&nbsp;&nbsp;&nbsp;&nbsp;%s
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·整数&nbsp;&nbsp;&nbsp;&nbsp;%d
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·浮点数&nbsp;&nbsp;&nbsp;&nbsp;%f
+                    <br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;<b>使用方法>></b>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event&nbsp;=&nbsp;午餐
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event_lunch&nbsp;=&nbsp;汉堡
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quantity&nbsp;=&nbsp;10
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;语句("我要吃%s了，我今天的%s是%d个%s。"&nbsp;%&nbsp;(event,&nbsp;event,&nbsp;quantity,&nbsp;event_lunch))
+                    <br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;输出结果：我要吃午餐了，我今天的午餐是10个汉堡。
+                    <br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;<b>批量格式化>></b>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;f"内容{变量名}"
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;example：
+                    &nbsp;&nbsp;&nbsp;name&nbsp;=&nbsp;周华
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print(f"我是{name}。")
+                    <br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;输出结果：我是周华
+                    <br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;<b>数字精度控制>></b>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<b>使用方法></b>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·整数&nbsp;&nbsp;%md
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;·浮点数&nbsp;&nbsp;%m.nf
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<b>含义></b>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;m：数字num的长度；
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;n：小数部分的精度，超出精度的部分自动四舍五入。
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    &nbsp;&nbsp;<b>小练习：</b>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;<b>股价计算小程序</b>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;定义如下变量：
+                    <br>
+                    &nbsp;&nbsp;&nbsp;公司名name；当前股价stock_price；股票代码stock_code；股票每日增长系数stock_price_daily_growth_factor（浮点数类型，示例1.2）；增长天数growth_days。
+                    <br>
+                    &nbsp;&nbsp;&nbsp;计算经过若干天后的增长，股价达到了多少钱
+                    <br>
+                    &nbsp;&nbsp;&nbsp;要求使用字符串格式化进行输出，如果是浮点数，小数精度应该控制在2位。
+                    <br>
+                    &nbsp;&nbsp;&nbsp;最终输出结果展示5个变量，以及经过计算的增长若干天后的股价。（一半使用批量格式化，一半使用占位符格式化）
+                    <br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;示例答案：71.63
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
