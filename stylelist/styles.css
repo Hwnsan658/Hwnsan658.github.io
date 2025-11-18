@@ -351,6 +351,15 @@ scroll-container::-webkit-scrollbar {
     font-weight: 460;
     text-align: justify;
 }
+.atccontent i {
+    color: #0000007c;
+    font-weight: 400;
+}
+.atccontent img {
+    width: 70%;
+    height: auto;
+    max-height: 100vh;
+}
 #writer {
     color: #008a4c8f;
     margin-bottom: 2rem;
@@ -551,4 +560,10 @@ scroll-container::-webkit-scrollbar {
     color: #000000be;
     font-weight: 460;
     text-align: justify;
+}
+.justCenter {
+    text-align: center;
+    justify-content: center;
+    color: #0000007c;
+    font-weight: 400;
 }
