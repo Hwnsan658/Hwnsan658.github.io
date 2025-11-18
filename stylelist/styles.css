@@ -240,15 +240,16 @@ a {
     list-style: none;
     justify-items: center;
     justify-content: center;
-    flex-direction: column-reverse;
+    
     text-align: center;
 }
 .atccontainer a {
-    min-width: 320px;
-    max-width: 95%;
+    width: 95%;
     min-height: 90px;
     max-height: 15%;
     margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 scroll-container {
    overflow: auto;
@@ -450,8 +451,9 @@ scroll-container::-webkit-scrollbar {
     min-height: 90px;
     max-height: 15%;
     margin: 10px;
-    position: relative; 
-    display: inline-table;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 /*网站页面未上传盒子*/
 #webbox {
@@ -566,4 +568,16 @@ scroll-container::-webkit-scrollbar {
     justify-content: center;
     color: #0000007c;
     font-weight: 400;
+}
+#little_container {
+    width:100%;
+    min-width: 390px;
+    height: 100%;
+    display: flex;
+    margin: 0px;
+    margin-top: 60px;
+    list-style: none;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
 }
