@@ -236,7 +236,7 @@ a {
     height: 100%;
     display: flex;
     margin: 0px;
-    margin-top: 90px;
+    margin-top: 60px;
     list-style: none;
     justify-items: center;
     justify-content: center;
@@ -423,6 +423,7 @@ scroll-container::-webkit-scrollbar {
 #webboxloaded p {
     margin-top: 5px;
     width: 135px;
+    font-size: 0.87rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -430,6 +431,18 @@ scroll-container::-webkit-scrollbar {
 #webboxloaded:hover {
     scale: 1.04;
     box-shadow: rgba(170, 170, 170, 0.7) 3px 3px 4px 0px;
+}
+.linkloaded {
+    width: auto;
+    max-width: 600px;
+    column-width: auto;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    min-height: 90px;
+    max-height: 15%;
+    margin: 10px;
+    position: relative; 
+    display: inline-table;
 }
 /*网站页面未上传盒子*/
 #webbox {
