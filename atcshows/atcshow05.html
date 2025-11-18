@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <title>博客-python笔记03</title>
+        <link rel="stylesheet" href="/stylelist/styles.css">
+        <link rel="icon" href="/Favicon.ico" type="image/x-icon">
+        <script type="text/javascript">
+        // 定义图片路径数组
+        var bodyBgs = [
+           "/image/01.webp",
+           "/image/02.webp",
+           "/image/03.jpg",
+           "/image/04.webp",
+           "/image/05.webp",
+           "/image/06.jpg",
+           "/image/07.jpg",
+           "/image/08.jpg",
+           "/image/09.jpg",
+           "/image/10.jpg",
+        ];
+        // 生成随机索引
+        var randomBgIndex = Math.floor(Math.random() * bodyBgs.length);
+        // 设置背景样式
+        document.write (
+            '<style>body { background: url(' + bodyBgs[randomBgIndex] + ') no-repeat center center; background-size: cover; }</style>'
+        );
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+            <div class="logo">
+               RC
+            </div>
+            <ul class="nav-links">
+                <li><a href="/index.html">首页</a></li>
+                <li><a href="/webs.html">网站</a></li>
+                <li><a href="/article.html">博客</a></li>
+                <li><a href="/tools.html">推荐</a></li>
+            </ul>
+                <div class="btns">
+                    <button class="btn">
+                       <a href="https://qm.qq.com/q/Jl8MFdhOQW">Talking</a>
+                    </button>
+                </div>
+            </nav>
+            <div class="atccontent">
+                <h1>
+                    python笔记03
+                </h1>
+                <p id="writer">
+                    25.11.14.15.03手动发布 by周华
+                </p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<b>基础的条件语句：</b>
+                    <br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;变量名&nbsp;==&nbsp;比较值
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("The&nbsp;condition&nbsp;is&nbsp;true.")
+                    <br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>示例输出结果：
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;condition&nbsp;is&nbsp;true.</b>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
