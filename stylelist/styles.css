@@ -620,6 +620,6 @@ scroll-container::-webkit-scrollbar {
     display: block;
 }
 #note_text {
-    color: #1b1b1bd0;
+    color: #303030d0;
     font-style: italic;
 }
