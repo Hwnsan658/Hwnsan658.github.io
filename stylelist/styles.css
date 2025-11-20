@@ -477,7 +477,7 @@ scroll-container::-webkit-scrollbar {
     height: 200px;
     margin: 25px;
     position:relative; 
-    display:inline-table;
+    display: inline-table;
     box-shadow: 5px 5px 10px 0px grey;
     background-color: rgba(243, 255, 251, 0.425);
     border-radius: 15px;
@@ -573,6 +573,7 @@ scroll-container::-webkit-scrollbar {
     min-width: 390px;
     height: 100%;
     display: flex;
+    flex-direction: column;
     margin: 0px;
     margin-top: 60px;
     list-style: none;
@@ -622,4 +623,9 @@ scroll-container::-webkit-scrollbar {
 #note_text {
     color: #303030d0;
     font-style: italic;
+}
+.atcbody p::first-line {
+    content: "";
+    display: block;
+    margin-left: 2rem;
 }
