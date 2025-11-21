@@ -350,10 +350,15 @@ scroll-container::-webkit-scrollbar {
     color: #000000be;
     font-weight: 460;
     text-align: justify;
+    text-indent: 2rem;
 }
 .atccontent i {
     color: #0000007c;
     font-weight: 400;
+}
+.atccontent a {
+    width: 90vw;
+    height: 10vh;
 }
 .atccontent img {
     width: 70%;
@@ -602,6 +607,8 @@ scroll-container::-webkit-scrollbar {
     text-align: center;
     justify-content: center;
 }
+
+/*这仨货是屎山，照顾第三篇python笔记用的*/
 .note::before {
     content: "";
     background-color: #75757579;
@@ -620,12 +627,36 @@ scroll-container::-webkit-scrollbar {
     margin-bottom: 1rem;
     display: block;
 }
-#note_text {
+#note_text{
+    overflow: hidden;
+    display: block;
+    text-indent: 2rem;
     color: #303030d0;
     font-style: italic;
 }
-.atcbody p::first-line {
+
+.note_text::before {
     content: "";
+    background-color: #75757579;
+    width: auto;
+    height: 1.5px;
+    margin-top: 2rem;
+    margin-bottom: 5px;
     display: block;
-    margin-left: 2rem;
+}
+.note_text::after {
+    content: "";
+    background-color: #75757579;
+    width: auto;
+    height: 1.5px;
+    margin-top: 10px;
+    margin-bottom: 1rem;
+    display: block;
+}
+.note_text{
+    overflow: hidden;
+    display: block;
+    text-indent: 2rem;
+    color: #303030d0;
+    font-style: italic;
 }
